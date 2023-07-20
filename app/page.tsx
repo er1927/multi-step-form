@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { MultiStepForm, Step } from 'react-multi-form';
 
 export default function Home() {
   return (
