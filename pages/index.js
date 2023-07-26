@@ -41,7 +41,25 @@ export default function Home() {
          </div>
         </div>
         <div class="msf-view">
-            ...
+        <h1>Pick add-ons</h1>
+        <h4>Add-ons help enhance your gaming experience.</h4>
+        <div class="add-ons">
+          <div class="add-on">
+            <p class="title">Online service</p>
+            <p class="subtitle">Access to multiplayer games.</p>
+            <p class="price">+1$/mo</p>
+          </div>
+          <div class="add-on">
+            <p class="title">Larger storage</p>
+            <p class="subtitle">Extra 1TB of cloud save</p>
+            <p class="price">+2$/mo</p>
+          </div>
+          <div class="add-on">
+            <p class="title">Customizable Profile</p>
+            <p class="subtitle">Custom theme on your profile</p>
+            <p class="price">+2$/mo</p>
+          </div>
+        </div>
         </div>
     </div>
  
