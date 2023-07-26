@@ -19,6 +19,7 @@ export default function Home() {
             <div class="msf-step col-md-4"><i class="fa fa-clipboard"></i> <span>Step 1</span></div>
             <div class="msf-step col-md-4"><i class="fa fa-credit-card"></i><span>Step 2</span></div>
             <div class="msf-step col-md-4"><i class="fa fa-check"></i> <span>Step 3</span></div>
+            <div class="msf-step col-md-4"><i class=""></i> <span>Step 4</span></div>
         </div>
     </div>
  
