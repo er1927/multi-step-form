@@ -8,7 +8,6 @@
   "dependencies": {
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-multi-form-dark-blue": "^1.0.1"
+    "react-dom": "18.2.0"
   }
 }

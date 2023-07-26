@@ -8,7 +8,6 @@ export default function Home() {
         <title>MULTI STEP FORM</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">MULTI STEP FORM!</a>
@@ -72,4 +71,3 @@ export default function Home() {
     </div>
   )
 }
-
