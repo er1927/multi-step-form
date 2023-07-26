@@ -25,9 +25,12 @@ export default function Home() {
             <h1>Personal info</h1>
             <h4>Please provide your name, email address, and phone number.</h4>
             <div class="personal-info">
-              <input>Name</input>
-              <input type="email">Email address</input>
-              <input type="number">Phone Number</input>
+              <label>Name</label>
+              <input />
+              <label>Email Address</label>
+              <input type="email"/>
+              <label>Phone Number</label>
+              <input type="number"/>
             </div>
         </div>
         <div class="msf-view">
