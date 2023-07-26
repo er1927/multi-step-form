@@ -34,7 +34,9 @@ export default function Home() {
             </div>
         </div>
         <div class="msf-view">
-            ...
+        <h1>Select your plan</h1>
+        <h4>You have the option of monthly or yearly billing.</h4>
+         {/* toggle monthly/yearly here */}
         </div>
         <div class="msf-view">
             ...
