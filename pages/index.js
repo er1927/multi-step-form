@@ -64,9 +64,23 @@ export default function Home() {
         <div class="msf-view">
         <h1>Finishing up</h1>
         <h4>Double-check everything looks OK before confirming.</h4>
-        <div class="final">
+        <div class="final-tally">
+          <div class="invoice-item">
+            <p class="chosen-plan-title"></p>
+            <p class="chosen-plan-price"></p>
+          </div>
+
+          <div class="invoice-item">
+            <p class="chosen-add-ons"></p>
+            <p class="chosen-add-ons-price"></p>
+          </div>
+
+          <div class="invoice-item">
+            <p class="total"></p>
+            <p class="total-amoung"></p>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
  
     <div class="msf-navigation">
