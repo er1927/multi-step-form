@@ -7,11 +7,45 @@ export default function Home() {
       <Head>
         <title>MULTI STEP FORM</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/node_modules/multi-step-form-js/css/multi-step-form.css" type="text/css"></link>
       </Head>
       <main>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">MULTI STEP FORM!</a>
     </h1>
+    <form class="msf">
+    <div class="msf-header">
+        <div class="row text-center">
+            <div class="msf-step col-md-4"><i class="fa fa-clipboard"></i> <span>Step 1</span></div>
+            <div class="msf-step col-md-4"><i class="fa fa-credit-card"></i><span>Step 2</span></div>
+            <div class="msf-step col-md-4"><i class="fa fa-check"></i> <span>Step 3</span></div>
+        </div>
+    </div>
+ 
+    <div class="msf-content">
+        <div class="msf-view">
+            ...
+        </div>
+        <div class="msf-view">
+            ...
+        </div>
+        <div class="msf-view">
+            ...
+        </div>
+    </div>
+ 
+    <div class="msf-navigation">
+        <div class="row">
+            <div class="col-md-3">
+                <button type="button" data-type="back" class="btn btn-outline-dark msf-nav-button"><i class="fa fa-chevron-left"></i> Back </button>
+            </div>
+            <div class="col-md-3 col-md-offset-6">
+                <button type="button" data-type="next" class="btn  btn-outline-dark msf-nav-button">Next <i class="fa fa-chevron-right"></i></button>
+                <button type="submit" data-type="submit" class="btn btn-outline-dark msf-nav-button">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
       </main>
 
       <footer>
