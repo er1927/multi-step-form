@@ -63,6 +63,7 @@ export default function Home() {
         </div>
         <div class="msf-view">
         <h1>Finishing up</h1>
+        <h4>Double-check everything looks OK before confirming.</h4>
         </div>
     </div>
  
