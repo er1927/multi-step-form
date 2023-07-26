@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         </div>
         <div class="msf-view">
-        
+        <h1>Finishing up</h1>
         </div>
     </div>
  
