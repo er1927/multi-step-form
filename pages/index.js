@@ -38,11 +38,11 @@ export default function Home() {
     <div class="msf-navigation">
         <div class="row">
             <div class="col-md-3">
-                <button type="button" data-type="back" class="btn btn-outline-dark msf-nav-button"><i class="fa fa-chevron-left"></i> Back </button>
+                <button type="button" data-type="back" class="btn btn-outline-dark msf-nav-button"><i class="fa fa-chevron-left"></i> Go back </button>
             </div>
             <div class="col-md-3 col-md-offset-6">
-                <button type="button" data-type="next" class="btn  btn-outline-dark msf-nav-button">Next <i class="fa fa-chevron-right"></i></button>
-                <button type="submit" data-type="submit" class="btn btn-outline-dark msf-nav-button">Submit</button>
+                <button type="button" data-type="next" class="btn  btn-outline-dark msf-nav-button">Next Step<i class="fa fa-chevron-right"></i></button>
+                <button type="submit" data-type="submit" class="btn btn-outline-dark msf-nav-button">Confirm</button>
             </div>
         </div>
     </div>
