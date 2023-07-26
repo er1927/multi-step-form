@@ -53,7 +53,7 @@ export default function Home() {
        
       </footer>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         main {
           padding: 5rem 0;
           flex: 1;
@@ -102,7 +102,7 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-      `}</style>
+      `}</style> */}
     </div>
   )
 }
