@@ -26,11 +26,11 @@ export default function Home() {
             <h4>Please provide your name, email address, and phone number.</h4>
             <div class="personal-info">
               <label>Name</label>
-              <input placeholder=""/>
+              <input placeholder="e.g. Alex Smith"/>
               <label>Email Address</label>
-              <input type="email" placeholder=""/>
+              <input type="email" placeholder="e.g. alex_smith@world.com"/>
               <label>Phone Number</label>
-              <input type="number" placeholder=""/>
+              <input type="number" placeholder="e.g. + 1 234 567 890"/>
             </div>
         </div>
         <div class="msf-view">
