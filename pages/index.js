@@ -61,6 +61,9 @@ export default function Home() {
           </div>
         </div>
         </div>
+        <div class="msf-view">
+        
+        </div>
     </div>
  
     <div class="msf-navigation">
