@@ -4,15 +4,14 @@ import { Ubuntu } from 'next/font/google'
 
 const ubuntu = Ubuntu({ 
   weight: ['400', '500', '700'],
-  subsets: ['latin-ext'] })
+  subsets: ['latin-ext'] 
+})
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
         <title>MULTI STEP FORM</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="" type="text/css"></link>
       </Head>
       <main style={ubuntu.style}>
     <form className="msf">
