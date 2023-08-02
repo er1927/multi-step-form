@@ -1,5 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import { Ubuntu } from 'next/font/google'
+
+const ubuntu = Ubuntu({ 
+  weight: '400',
+  subsets: ['latin-ext'] })
 
 export default function Home() {
   return (
@@ -9,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="" type="text/css"></link>
       </Head>
-      <main>
+      <main style={ubuntu.style}>
     <form className="msf">
     <div className="msf-header">
         <div className="row text-center">
