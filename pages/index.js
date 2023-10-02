@@ -15,10 +15,12 @@ export default function Home() {
 
       </Head>
       <main style={ubuntu.style}>
-    <form className="msf">
+    {/* <form className="msf"> */}
+    <form className={styles.msfView}>
     <div className="msf-header">
         <div className="row text-center">
-            <div className="msf-step col-md-4"><span>Step 1</span></div>
+            {/* <div className="msf-step col-md-4"><span>Step 1</span></div> */}
+            <div className={styles.stepOne}><span>Step 1</span></div>
             <div className="msf-step col-md-4"><span>Step 2</span></div>
             <div className="msf-step col-md-4"><span>Step 3</span></div>
             <div className="msf-step col-md-4"><span>Step 4</span></div>
