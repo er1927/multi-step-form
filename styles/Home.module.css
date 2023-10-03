@@ -16,4 +16,5 @@
 
 .card__body__input {
   display: flex;
+  flex-direction: column;
 }
