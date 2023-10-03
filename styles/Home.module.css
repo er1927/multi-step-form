@@ -13,3 +13,7 @@
 .msf__navigation {
   display: flex;
 }
+
+.card__body__input {
+  display: flex;
+}
