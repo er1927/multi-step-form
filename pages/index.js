@@ -31,7 +31,7 @@ export default function Home() {
         <div className={styles.card__body}>
             <h1>Personal info</h1>
             <h4>Please provide your name, email address, and phone number.</h4>
-            <div className="personal-info">
+            <div className={styles.card__body__input}>
               <label>Name</label>
               <input placeholder="e.g. Alex Smith"/>
               <label>Email Address</label>
