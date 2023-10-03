@@ -51,17 +51,17 @@ export default function Home() {
         <h1>Pick add-ons</h1>
         <h4>Add-ons help enhance your gaming experience.</h4>
         <div className="add-ons">
-          <div className="add-on">
+          <div className={styles.card__body__checklist}>
             <p className="title">Online service</p>
             <p className="subtitle">Access to multiplayer games.</p>
             <p className="price">+1$/mo</p>
           </div>
-          <div className="add-on">
+          <div className={styles.card__body__checklist}>
             <p className="title">Larger storage</p>
             <p className="subtitle">Extra 1TB of cloud save</p>
             <p className="price">+2$/mo</p>
           </div>
-          <div className="add-on">
+          <div className={styles.card__body__checklist}>
             <p className="title">Customizable Profile</p>
             <p className="subtitle">Custom theme on your profile</p>
             <p className="price">+2$/mo</p>
