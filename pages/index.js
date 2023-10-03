@@ -90,20 +90,17 @@ export default function Home() {
       </div>
     </div>
  
-    <div className="msf-navigation">
-        <div className="row">
-            <div className="col-md-3">
-                <button type="button" data-type="back" className="btn btn-outline-dark msf-nav-button"><i className="fa fa-chevron-left"></i> Go back </button>
-            </div>
-            <div className="col-md-3 col-md-offset-6">
-                <button type="button" data-type="next" className="btn  btn-outline-dark msf-nav-button">Next Step<i className="fa fa-chevron-right"></i></button>
-                <button type="submit" data-type="submit" className="btn btn-outline-dark msf-nav-button">Confirm</button>
-            </div>
-        </div>
+    <div className={styles.msf__navigation}>
+      <div className="col-md-3">
+        <button type="button" data-type="back" className="btn btn-outline-dark msf-nav-button"><i className="fa fa-chevron-left"></i> Go back </button>
+      </div>
+      <div className="col-md-3 col-md-offset-6">
+        <button type="button" data-type="next" className="btn  btn-outline-dark msf-nav-button">Next Step<i className="fa fa-chevron-right"></i></button>
+        <button type="submit" data-type="submit" className="btn btn-outline-dark msf-nav-button">Confirm</button>
+      </div>
     </div>
 </form>
       </main>
-
       <footer>
        
       </footer>
