@@ -18,12 +18,12 @@ export default function Home() {
     {/* <form className="msf"> */}
     <form className={styles.msfView}>
     <div className="msf-header">
-        <div className="row text-center">
+        <div className={styles.msf__stepcontainer}>
             {/* <div className="msf-step col-md-4"><span>Step 1</span></div> */}
-            <div className={styles.stepOne}><span>Step 1</span></div>
-            <div className="msf-step col-md-4"><span>Step 2</span></div>
-            <div className="msf-step col-md-4"><span>Step 3</span></div>
-            <div className="msf-step col-md-4"><span>Step 4</span></div>
+            <div className={styles.msf__step}><span>1</span></div>
+            <div className={styles.msf__step}><span>2</span></div>
+            <div className={styles.msf__step}><span>3</span></div>
+            <div className={styles.msf__step}><span>4</span></div>
         </div>
     </div>
  
