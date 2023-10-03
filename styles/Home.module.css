@@ -7,3 +7,6 @@
   margin: 20px;
   height: 400px;
 }
+.msf__stepcontainer {
+  display: flex;
+}
