@@ -10,3 +10,6 @@
 .msf__stepcontainer {
   display: flex;
 }
+.msf__navigation {
+  display: flex;
+}
