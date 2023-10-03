@@ -1,12 +1,10 @@
-/* @media only screen and (min-width: 200px) {
-  .container {
-    background-color: pink;
-  }
-} */
-.msfView {
-  color: purple;
+.container {
+  background-color: pink;
 }
 
-.stepOne {
-  font-size: 90px;
+.card__body {
+  background-color: white;
+  margin: 20px;
+  height: 400px;
+  
 }

@@ -28,7 +28,7 @@ export default function Home() {
     </div>
  
     <div className="msf-content">
-        <div className="msf-view">
+        <div className={styles.card__body}>
             <h1>Personal info</h1>
             <h4>Please provide your name, email address, and phone number.</h4>
             <div className="personal-info">
@@ -40,14 +40,14 @@ export default function Home() {
               <input type="number" placeholder="e.g. + 1 234 567 890"/>
             </div>
         </div>
-        <div className="msf-view">
+        <div className={styles.card__body}>
         <h1>Select your plan</h1>
         <h4>You have the option of monthly or yearly billing.</h4>
         <div className="select-plan">
             {/* toggle monthly/yearly here */}
          </div>
         </div>
-        <div className="msf-view">
+        <div className={styles.card__body}>
         <h1>Pick add-ons</h1>
         <h4>Add-ons help enhance your gaming experience.</h4>
         <div className="add-ons">
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </div>
         </div>
-        <div className="msf-view">
+        <div className={styles.card__body}>
         <h1>Finishing up</h1>
         <h4>Double-check everything looks OK before confirming.</h4>
         <div className="final-tally">
