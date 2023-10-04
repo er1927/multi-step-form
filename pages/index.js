@@ -61,7 +61,7 @@ export default function Home() {
             <p>$12/mo</p>
           </div>
          </div>
-         <div className="select-plan">
+         <div className={styles.card__body__option}>
           <div>
             {/* icon here */}
           </div>
