@@ -66,8 +66,8 @@ export default function Home() {
             {/* icon here */}
           </div>
           <div>
-            <h3></h3>
-            <p></p>
+            <h3>Pro </h3>
+            <p>$15/mo</p>
           </div>
          </div>
          <div classname="card-toggle">
