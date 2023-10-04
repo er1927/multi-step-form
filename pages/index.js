@@ -48,8 +48,8 @@ export default function Home() {
             {/* icon here */}
           </div>
           <div>
-            <h3></h3>
-            <p></p>
+            <h3>Arcade </h3>
+            <p>$9/mo</p>
           </div>
          </div>
          <div className="select-plan">
