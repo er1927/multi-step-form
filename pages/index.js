@@ -52,7 +52,7 @@ export default function Home() {
             <p>$9/mo</p>
           </div>
          </div>
-         <div className="select-plan">
+         <div className={styles.card__body__option}>
           <div>
             {/* icon here */}
           </div>
