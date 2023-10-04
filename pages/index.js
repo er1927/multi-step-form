@@ -70,6 +70,9 @@ export default function Home() {
             <p></p>
           </div>
          </div>
+         <div classname="card-toggle">
+          {/* toggle monthly/yearly here */}
+         </div>
         </div>
         <div className={styles.card__body}>
         <h1>Pick add-ons</h1>
