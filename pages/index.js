@@ -52,6 +52,24 @@ export default function Home() {
             <p></p>
           </div>
          </div>
+         <div className="select-plan">
+          <div>
+            {/* icon here */}
+          </div>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+         </div>
+         <div className="select-plan">
+          <div>
+            {/* icon here */}
+          </div>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+         </div>
         </div>
         <div className={styles.card__body}>
         <h1>Pick add-ons</h1>
