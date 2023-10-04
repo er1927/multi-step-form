@@ -71,7 +71,9 @@ export default function Home() {
           </div>
          </div>
          <div classname="card-toggle">
+          <p>Montly</p>
           {/* toggle monthly/yearly here */}
+          <div>Yearly</div>
          </div>
         </div>
         <div className={styles.card__body}>
