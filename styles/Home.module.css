@@ -7,7 +7,7 @@
   background-color: white;
   margin: 20px;
   padding: 40px;
-  height: 400px;
+  height: 100%;
 }
 .msf__stepcontainer {
   display: flex;
