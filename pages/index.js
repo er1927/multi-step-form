@@ -70,7 +70,7 @@ export default function Home() {
             <p>$15/mo</p>
           </div>
          </div>
-         <div classname="card-toggle">
+         <div className={styles.card__body__options__toggle}>
           <p>Montly</p>
           {/* toggle monthly/yearly here */}
           <p>Yearly</p>
