@@ -5,6 +5,7 @@
 .card__body {
   background-color: white;
   margin: 20px;
+  padding: 40px;
   height: 400px;
 }
 .msf__stepcontainer {
