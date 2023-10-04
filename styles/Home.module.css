@@ -1,3 +1,4 @@
+
 .container {
   background-color: pink;
 }
@@ -18,6 +19,10 @@
 .card__body__input {
   display: flex;
   flex-direction: column;
+}
+.card__body__input {
+  line-height:32px;
+  padding: 0;
 }
 
 .card__body__input_label {
