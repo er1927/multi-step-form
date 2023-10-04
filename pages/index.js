@@ -32,11 +32,11 @@ export default function Home() {
             <h1>Personal info</h1>
             <h4>Please provide your name, email address, and phone number.</h4>
             <div className={styles.card__body__input}>
-              <label>Name</label>
+              <label className={styles.card__body__input_label}>Name</label>
               <input placeholder="e.g. Alex Smith"/>
-              <label>Email Address</label>
+              <label className={styles.card__body__input_label}>Email Address</label>
               <input type="email" placeholder="e.g. alex_smith@world.com"/>
-              <label>Phone Number</label>
+              <label className={styles.card__body__input_label}>Phone Number</label>
               <input type="number" placeholder="e.g. + 1 234 567 890"/>
             </div>
         </div>

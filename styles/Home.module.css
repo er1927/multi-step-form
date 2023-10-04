@@ -20,6 +20,10 @@
   flex-direction: column;
 }
 
+.card__body__input_label {
+  padding: 20px 0 10px 0;
+}
+
 .card__body__checklist {
   display: flex;
 }
