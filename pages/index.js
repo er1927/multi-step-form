@@ -43,7 +43,7 @@ export default function Home() {
         <div className={styles.card__body}>
         <h1>Select your plan</h1>
         <h4>You have the option of monthly or yearly billing.</h4>
-        <div className="select-plan">
+        <div className={styles.card__body__option}>
           <div>
             {/* icon here */}
           </div>
