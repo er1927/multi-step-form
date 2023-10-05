@@ -40,3 +40,7 @@
 .card__body__options__toggle {
   display: flex;
 }
+
+.navigation__buttons {
+  display: flex;
+}
