@@ -12,7 +12,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>MULTI STEP FORM</title>
-
       </Head>
       <main style={ubuntu.style}>
     <form className={styles.msfView}>
