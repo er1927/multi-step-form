@@ -11,6 +11,7 @@
 }
 .msf__stepcontainer {
   display: flex;
+  justify-content: center;
 }
 .msf__navigation {
   display: flex;
