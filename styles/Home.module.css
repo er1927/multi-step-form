@@ -16,7 +16,9 @@
 
 .msf__step {
   padding: 20px;
+  border: solid 2px darkgray;
 }
+
 .msf__navigation {
   display: flex;
   justify-content: space-between;
