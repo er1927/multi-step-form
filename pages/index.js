@@ -123,7 +123,7 @@ export default function Home() {
       <div className="col-md-3">
         <button type="button" data-type="back" className="btn btn-outline-dark msf-nav-button"><i className="fa fa-chevron-left"></i> Go back </button>
       </div>
-      <div className="col-md-3 col-md-offset-6">
+      <div className={styles.navigation__buttons}>
         <button type="button" data-type="next" className="btn  btn-outline-dark msf-nav-button">Next Step<i className="fa fa-chevron-right"></i></button>
         <button type="submit" data-type="submit" className="btn btn-outline-dark msf-nav-button">Confirm</button>
       </div>
