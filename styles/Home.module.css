@@ -14,6 +14,7 @@
 }
 .msf__navigation {
   display: flex;
+  justify-content: space-between;
 }
 
 .card__body__input {
@@ -41,6 +42,3 @@
   display: flex;
 }
 
-.navigation__buttons {
-  display: flex;
-}
