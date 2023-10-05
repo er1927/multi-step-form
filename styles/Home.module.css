@@ -16,6 +16,7 @@
 
 .msf__step {
   padding: 20px;
+  margin:10px;
   border: solid 2px darkgray;
   border-radius: 50%;
 }
