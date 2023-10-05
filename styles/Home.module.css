@@ -13,6 +13,10 @@
   display: flex;
   justify-content: center;
 }
+
+.msf__step {
+  padding: 20px;
+}
 .msf__navigation {
   display: flex;
   justify-content: space-between;
