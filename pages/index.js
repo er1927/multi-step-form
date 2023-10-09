@@ -9,7 +9,7 @@ const ubuntu = Ubuntu({
 })
 
 export default function Home() {
-  // state and inizialization 
+  // state and initialization 
   const [currentStep, setCurrentStep] = useState(1);
 
   const [formData, setFormData] = useState({
@@ -40,6 +40,49 @@ export default function Home() {
       description: 'Double-check everything looks OK before confirming.',
     },
   ];
+
+  // event handlers 
+  
+  const handleStepChange = (step) => {
+    if (step >= 1 && step <= 4) {
+      setCurrentStep(step);
+      setErrors({});
+    }
+  };
+  
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    const newErrors = {};
+  
+    // Form validation based on the current step
+    if (currentStep === 1) {
+      if (!formData.name || !formData.email || !formData.phoneNumber) {
+        newErrors.step1 = 'Please fill in all fields.';
+      }
+      if (!formData.email.match(/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/)) {
+        newErrors.email = 'Please enter a valid email address.';
+      }
+    } else if (currentStep === 2) {
+      if (!formData.plan) {
+        newErrors.plan = 'Please select a plan.';
+      }
+    } else if (currentStep === 3) {
+      // Add validation for add-ons here if needed.
+    }
+  
+    setErrors(newErrors);
+  
+    if (Object.keys(newErrors).length === 0) {
+      // Proceed to the next step or handle form submission
+      if (currentStep < 4) {
+        handleStepChange(currentStep + 1);
+      } else {
+        // Handle final form submission
+        // You can send the data to the server or perform any other action here.
+        console.log('Form data:', formData);
+      }
+    }
+  };
 
   return (
     <div className={styles.container}>
