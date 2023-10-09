@@ -105,96 +105,52 @@ export default function Home() {
           </div>
  
     <div className="msf-content">
-        <div className={styles.card__body}>
-            <h1>Personal info</h1>
-            <h4>Please provide your name, email address, and phone number.</h4>
-            <div className={styles.card__body__input}>
-              <label className={styles.card__body__input_label}>Name</label>
-              <input className={styles.card__body__input} placeholder="e.g. Alex Smith"/>
-              <label className={styles.card__body__input_label}>Email Address</label>
-              <input className={styles.card__body__input} type="email" placeholder="e.g. alex_smith@world.com"/>
-              <label className={styles.card__body__input_label}>Phone Number</label>
-              <input className={styles.card__body__input} type="number" placeholder="e.g. + 1 234 567 890"/>
+        <div className={styles.card__body}>              
+        <h1>{steps[currentStep - 1].title}</h1>
+              <h4>{steps[currentStep - 1].description}</h4>
+              // Render form fields based on the current step 
+              {currentStep === 1 && (
+                <div className={styles.card__body__input}>
+                  <label className={styles.card__body__input_label}>Name</label>
+                  <input
+                    className={styles.card__body__input}
+                    type="text"
+                    placeholder="e.g. Alex Smith"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  />
+                  <label className={styles.card__body__input_label}>Email Address</label>
+                  <input
+                    className={styles.card__body__input}
+                    type="email"
+                    placeholder="e.g. alex_smith@world.com"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  />
+                  <label className={styles.card__body__input_label}>Phone Number</label>
+                  <input
+                    className={styles.card__body__input}
+                    type="text"  //Use text for phone number
+                    placeholder="e.g. +1 234 567 890"
+                    value={formData.phoneNumber}
+                    onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
+                  />
+                </div>
+              )}
+              {currentStep === 2 && (
+                null // Render plan options and handle selection
+              )}
+              {currentStep === 3 && (
+                null // Render add-ons options and handle selection
+              )}
+              {currentStep === 4 && (
+                null // Display summary of selections
+              )}
+              {errors.step1 && <p className={styles.error}>{errors.step1}</p>}
+              {errors.email && <p className={styles.error}>{errors.email}</p>}
+              {errors.plan && <p className={styles.error}>{errors.plan}</p>}
             </div>
-        </div>
-        <div className={styles.card__body}>
-        <h1>Select your plan</h1>
-        <h4>You have the option of monthly or yearly billing.</h4>
-        <div className={styles.card__body__option}>
-          <div>
-            {/* icon here */}
           </div>
-          <div>
-            <h3>Arcade</h3>
-            <p>$9/mo</p>
-          </div>
-         </div>
-         <div className={styles.card__body__option}>
-          <div>
-            {/* icon here */}
-          </div>
-          <div>
-            <h3>Advanced </h3>
-            <p>$12/mo</p>
-          </div>
-         </div>
-         <div className={styles.card__body__option}>
-          <div>
-            {/* icon here */}
-          </div>
-          <div>
-            <h3>Pro </h3>
-            <p>$15/mo</p>
-          </div>
-         </div>
-         <div className={styles.card__body__options__toggle}>
-          <p>Montly</p>
-          {/* toggle monthly/yearly here */}
-          <p>Yearly</p>
-         </div>
-        </div>
-        <div className={styles.card__body}>
-        <h1>Pick add-ons</h1>
-        <h4>Add-ons help enhance your gaming experience.</h4>
-        <div className="add-ons">
-          <div className={styles.card__body__checklist}>
-            <p className="title">Online service</p>
-            <p className="subtitle">Access to multiplayer games.</p>
-            <p className="price">+1$/mo</p>
-          </div>
-          <div className={styles.card__body__checklist}>
-            <p className="title">Larger storage</p>
-            <p className="subtitle">Extra 1TB of cloud save</p>
-            <p className="price">+2$/mo</p>
-          </div>
-          <div className={styles.card__body__checklist}>
-            <p className="title">Customizable Profile</p>
-            <p className="subtitle">Custom theme on your profile</p>
-            <p className="price">+2$/mo</p>
-          </div>
-        </div>
-        </div>
-        <div className={styles.card__body}>
-        <h1>Finishing up</h1>
-        <h4>Double-check everything looks OK before confirming.</h4>
-        <div className="final-tally">
-          <div className="tally-item">
-            <p className="chosen-plan-title"></p>
-            <p className="chosen-plan-price"></p>
-          </div>
-
-          <div className="tally-item">
-            <p className="chosen-add-ons"></p>
-            <p className="chosen-add-ons-price"></p>
-          </div>
-
-          <div className="tally-item">
-            <p className="total"></p>
-            <p className="total-amoung"></p>
-          </div>
-        </div>
-      </div>
-    </div>
  
     <div className={styles.msf__navigation}>
       <div className="col-md-3">
