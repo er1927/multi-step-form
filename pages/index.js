@@ -93,12 +93,16 @@ export default function Home() {
     <form className={styles.msfView} onSubmit={handleFormSubmit}>
     <div className="msf-header">
         <div className={styles.msf__stepcontainer}>
-            <div className={styles.msf__step}><span>1</span></div>
-            <div className={styles.msf__step}><span>2</span></div>
-            <div className={styles.msf__step}><span>3</span></div>
-            <div className={styles.msf__step}><span>4</span></div>
-        </div>
-    </div>
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className={`${styles.msf__step} ${currentStep === index + 1 ? styles.active : ''}`}
+              onClick={() => handleStepChange(index + 1)}>
+              <span>{index + 1}</span>
+            </div>
+              ))}
+            </div>
+          </div>
  
     <div className="msf-content">
         <div className={styles.card__body}>
