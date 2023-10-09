@@ -154,14 +154,31 @@ export default function Home() {
  
     <div className={styles.msf__navigation}>
       <div className="col-md-3">
-        <button type="button" data-type="back" className="btn btn-outline-dark msf-nav-button"><i className="fa fa-chevron-left"></i> Go back </button>
-      </div>
-      <div>
-        <button type="button" data-type="next" className="btn  btn-outline-dark msf-nav-button">Next Step<i className="fa fa-chevron-right"></i></button>
-        <button type="submit" data-type="submit" className="btn btn-outline-dark msf-nav-button">Confirm</button>
-      </div>
-    </div>
-</form>
+      {currentStep > 1 && (
+                <button
+                  type="button"
+                  data-type="back"
+                  className="btn btn-outline-dark msf-nav-button"
+                  onClick={() => handleStepChange(currentStep - 1)}
+                >
+                  <i className="fa fa-chevron-left"></i> Go back
+                </button>
+              )}
+            </div>
+            <div>
+              {currentStep < 4 && (
+                <button type="button" data-type="next" className="btn btn-outline-dark msf-nav-button" onClick={handleFormSubmit}>
+                  Next Step <i className="fa fa-chevron-right"></i>
+                </button>
+              )}
+              {currentStep === 4 && (
+                <button type="submit" data-type="submit" className="btn btn-outline-dark msf-nav-button">
+                  Confirm
+                </button>
+              )}
+            </div>
+          </div>
+        </form>
       </main>
       <footer>
        
@@ -169,8 +186,3 @@ export default function Home() {
     </div>
   )
 }
-
-// el plan es ir de a poco, 
-// copiando y pegando de un modo logico (base + fill in the blank)
-// el codigo que esta en MSFindex.js en la carpeta de assets y design
-//pa hacer que ande el formulario
