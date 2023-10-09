@@ -42,7 +42,7 @@ export default function Home() {
   ];
 
   // event handlers 
-  
+
   const handleStepChange = (step) => {
     if (step >= 1 && step <= 4) {
       setCurrentStep(step);
@@ -90,7 +90,7 @@ export default function Home() {
         <title>MULTI STEP FORM</title>
       </Head>
       <main style={ubuntu.style}>
-    <form className={styles.msfView}>
+    <form className={styles.msfView} onSubmit={handleFormSubmit}>
     <div className="msf-header">
         <div className={styles.msf__stepcontainer}>
             <div className={styles.msf__step}><span>1</span></div>
