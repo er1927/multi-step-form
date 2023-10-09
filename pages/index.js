@@ -9,6 +9,38 @@ const ubuntu = Ubuntu({
 })
 
 export default function Home() {
+  // state and inizialization 
+  const [currentStep, setCurrentStep] = useState(1);
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phoneNumber: '',
+    plan: '',
+    addons: [],
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const steps = [
+    {
+      title: 'Personal info',
+      description: 'Please provide your name, email address, and phone number.',
+    },
+    {
+      title: 'Select your plan',
+      description: 'You have the option of monthly or yearly billing.',
+    },
+    {
+      title: 'Pick add-ons',
+      description: 'Add-ons help enhance your gaming experience.',
+    },
+    {
+      title: 'Finishing up',
+      description: 'Double-check everything looks OK before confirming.',
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
