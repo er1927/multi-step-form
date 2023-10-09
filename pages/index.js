@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 import { Ubuntu } from 'next/font/google'
 
@@ -133,3 +134,8 @@ export default function Home() {
     </div>
   )
 }
+
+// el plan es ir de a poco, 
+// copiando y pegando de un modo logico (base + fill in the blank)
+// el codigo que esta en MSFindex.js en la carpeta de assets y design
+//pa hacer que ande el formulario
